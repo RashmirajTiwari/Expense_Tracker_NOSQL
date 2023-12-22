@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sign Up
+    </title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+
+	<h2><center>Sign Up</center></h2>
+
+<hr>
+<div class="item-form">
+    <form id="myForm" action="#">
+        <input type="text"  name="ExpenseId" id="ExpenseId" style="display:none">
+        <div>
+            <label for="name">Name</label>
+            <input type="text"  name="name" id="name" required>
+        
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text"  name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"  name="password" id="password" required>
+        </div>
+        <div  class="form-action-buttons">
+            <center>
+            <button id="submitBtn" type="button">Sign Up</button>&nbsp;&nbsp;
+            <a href="login.html">Login</a>
+            </center>
+        </div>
+        <div  id="error">
+            
+        </div>
+    </form>
+</div>
+<br/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="../public/script.js"></script>
+</body>
+</html>

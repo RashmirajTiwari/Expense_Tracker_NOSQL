@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Expense App
+    </title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+
+	<h2><center>Expense App</center></h2>
+
+<hr>
+<div class="item-form">
+    <form id="myForm">
+        <input type="text"  name="ExpenseId" id="ExpenseId" style="display:none">
+        <div>
+            <label for="itemName">Item Name</label>
+            <input type="text"  name="itemName" id="itemName" >
+        
+        </div>
+        <div>
+            <label for="Category">Category</label>
+              <select id="category" name="category">
+                <option > </option>
+                <option >food</option>
+                <option >fuel</option>
+                <option >movie</option>
+                <option >clothes</option>
+              </select>
+        </div>
+        <div>
+            
+            <label for="price">Expense Amount</label>
+            <input type="text"  name="price" id="price" >
+        </div>
+        <div>
+            <label for="quantity">Quantity</label>
+            <input type="text"  name="quantity" id="quantity" >
+        </div>
+        <div  class="form-action-buttons">
+            <button id="submitBtn" type="button">Add</button>
+        </div>
+    </form>
+    <div id="buyPremium">
+        <button id="razorpayBtn" type="button">Buy Premium</button>
+    </div>
+    <div>
+        <button id="leaderboardBtn" type="button" style="display:none;">Leaderboard</button>
+    </div>
+    <div>
+        <button  id="downloadexpense" type="button" style="display:none;">Download File</button>
+     </div>
+    
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</div>
+<br/>
+<div id="errMessage">
+
+</div>
+<center>
+<h3>Expences</h3>
+</center>
+<div class = "item-table">
+    
+            <ul id="items"></ul>
+            <center><div id="pagination"></div></center>
+            
+        
+</div>
+<center>
+    <h3>Leaderboard</h3>
+    </center>
+<div class = "item-table">
+    
+    <ul id="leaderboard"></ul>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="../public/expense.js"></script>
+</body>
+</html>
